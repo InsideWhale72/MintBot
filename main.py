@@ -82,4 +82,4 @@ for i in rocketapidata["results"]:
   print(i["name"])
 
 
-bot.run('ODQ4NjkxNDQ1NTI3MzQ3MjAx.YLQTgA.xwmDw-BGAVSV-Sp0SgYJBIVwyAk')
+bot.run('token')
