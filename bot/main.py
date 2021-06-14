@@ -9,7 +9,7 @@ import asyncio
 import time
 import requests
 
-bot = commands.Bot(command_prefix='%', status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name='Lofi Coding playlist'))
+bot = commands.Bot(command_prefix='Mint ', status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name='Lofi Coding playlist'))
 bot.remove_command('help')
 
 @bot.event
@@ -23,7 +23,7 @@ async def help(ctx):
 
 @bot.command()
 async def hello(ctx):
-    await ctx.channel.send("Hi, im Mint! Find out my commands by typing \%help!")
+    await ctx.channel.send("Hi, im Mint! Find out my commands by typing Mint help!")
 
 @bot.command()
 async def ping(ctx):
@@ -33,7 +33,7 @@ async def ping(ctx):
     await ctx.send(embed=embed)
 
 @bot.command()
-async def remind(ctx, time, *, task):
+async def remindme(ctx, time, *, task):
     def convert(time):
         pos = ['s','m','h','d']
 
@@ -80,6 +80,5 @@ else:
 
 for i in rocketapidata["results"]:
   print(i["name"])
-
 
 bot.run('token')
