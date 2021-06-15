@@ -8,7 +8,6 @@ import random
 import asyncio
 import time
 import requests
-
 bot = commands.Bot(command_prefix='Mint ', status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name='Lofi Coding playlist'))
 bot.remove_command('help')
 
