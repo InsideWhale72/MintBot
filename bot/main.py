@@ -8,6 +8,9 @@ import random
 import asyncio
 import time
 import requests
+import sys
+sys.path.append('./tokenforbot')
+import bottoken
 bot = commands.Bot(command_prefix='Mint ', status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name='Lofi Coding playlist'))
 bot.remove_command('help')
 
@@ -80,4 +83,4 @@ else:
 for i in rocketapidata["results"]:
   print(i["name"])
 
-bot.run('token')
+bot.run(token)
