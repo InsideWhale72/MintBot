@@ -2,8 +2,7 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import Bot
 import os
-import requests
-import json
+c
 import random
 import asyncio
 import time

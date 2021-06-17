@@ -3,7 +3,7 @@ WIP
 
 Features soon to come:
 
-	Steam price checking
+	Steam price checking/comparing
 	
 	Rocket launch updates
 	
@@ -11,3 +11,4 @@ Features soon to come:
 	
 	Assignble activity roles
 	
+
