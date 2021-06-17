@@ -3,7 +3,7 @@ import json
 
 url = 'https://api.exchangerate.host/latest'
 response = requests.get(url)
-data = response.json()
+exchangedata = response.json()
 if response:
     exchangedata = json.loads(response.text)
     file = open("exchangecache.json", "w+")
@@ -11,7 +11,7 @@ if response:
     file.close()
 else:
     file = open("exchangecache.json", "r")
-    cachedata = file.read()
+    exchangecachedata = file.read()
     file.close()
     exchangedata = json.loads(cachedata)
-print(data)
+
